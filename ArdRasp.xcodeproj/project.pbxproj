@@ -1,0 +1,294 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DAC86A391CDC8FB900BEDE92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC86A381CDC8FB900BEDE92 /* AppDelegate.swift */; };
+		DAC86A3B1CDC8FB900BEDE92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC86A3A1CDC8FB900BEDE92 /* ViewController.swift */; };
+		DAC86A3E1CDC8FB900BEDE92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAC86A3C1CDC8FB900BEDE92 /* Main.storyboard */; };
+		DAC86A401CDC8FB900BEDE92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAC86A3F1CDC8FB900BEDE92 /* Assets.xcassets */; };
+		DAC86A431CDC8FB900BEDE92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAC86A411CDC8FB900BEDE92 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DAC86A351CDC8FB900BEDE92 /* ArdRasp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArdRasp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAC86A381CDC8FB900BEDE92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DAC86A3A1CDC8FB900BEDE92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DAC86A3D1CDC8FB900BEDE92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DAC86A3F1CDC8FB900BEDE92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DAC86A421CDC8FB900BEDE92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DAC86A441CDC8FB900BEDE92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DAC86A321CDC8FB900BEDE92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DAC86A2C1CDC8FB900BEDE92 = {
+			isa = PBXGroup;
+			children = (
+				DAC86A371CDC8FB900BEDE92 /* ArdRasp */,
+				DAC86A361CDC8FB900BEDE92 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DAC86A361CDC8FB900BEDE92 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAC86A351CDC8FB900BEDE92 /* ArdRasp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DAC86A371CDC8FB900BEDE92 /* ArdRasp */ = {
+			isa = PBXGroup;
+			children = (
+				DAC86A381CDC8FB900BEDE92 /* AppDelegate.swift */,
+				DAC86A3A1CDC8FB900BEDE92 /* ViewController.swift */,
+				DAC86A3C1CDC8FB900BEDE92 /* Main.storyboard */,
+				DAC86A3F1CDC8FB900BEDE92 /* Assets.xcassets */,
+				DAC86A411CDC8FB900BEDE92 /* LaunchScreen.storyboard */,
+				DAC86A441CDC8FB900BEDE92 /* Info.plist */,
+			);
+			path = ArdRasp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DAC86A341CDC8FB900BEDE92 /* ArdRasp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAC86A471CDC8FB900BEDE92 /* Build configuration list for PBXNativeTarget "ArdRasp" */;
+			buildPhases = (
+				DAC86A311CDC8FB900BEDE92 /* Sources */,
+				DAC86A321CDC8FB900BEDE92 /* Frameworks */,
+				DAC86A331CDC8FB900BEDE92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArdRasp;
+			productName = ArdRasp;
+			productReference = DAC86A351CDC8FB900BEDE92 /* ArdRasp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DAC86A2D1CDC8FB900BEDE92 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Octans Corp";
+				TargetAttributes = {
+					DAC86A341CDC8FB900BEDE92 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = LZ48EUAGT7;
+					};
+				};
+			};
+			buildConfigurationList = DAC86A301CDC8FB900BEDE92 /* Build configuration list for PBXProject "ArdRasp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DAC86A2C1CDC8FB900BEDE92;
+			productRefGroup = DAC86A361CDC8FB900BEDE92 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DAC86A341CDC8FB900BEDE92 /* ArdRasp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DAC86A331CDC8FB900BEDE92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC86A431CDC8FB900BEDE92 /* LaunchScreen.storyboard in Resources */,
+				DAC86A401CDC8FB900BEDE92 /* Assets.xcassets in Resources */,
+				DAC86A3E1CDC8FB900BEDE92 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DAC86A311CDC8FB900BEDE92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC86A3B1CDC8FB900BEDE92 /* ViewController.swift in Sources */,
+				DAC86A391CDC8FB900BEDE92 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DAC86A3C1CDC8FB900BEDE92 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAC86A3D1CDC8FB900BEDE92 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DAC86A411CDC8FB900BEDE92 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAC86A421CDC8FB900BEDE92 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DAC86A451CDC8FB900BEDE92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DAC86A461CDC8FB900BEDE92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DAC86A481CDC8FB900BEDE92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ArdRasp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.octans.dev.ArdRasp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DAC86A491CDC8FB900BEDE92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ArdRasp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.octans.dev.ArdRasp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DAC86A301CDC8FB900BEDE92 /* Build configuration list for PBXProject "ArdRasp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAC86A451CDC8FB900BEDE92 /* Debug */,
+				DAC86A461CDC8FB900BEDE92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAC86A471CDC8FB900BEDE92 /* Build configuration list for PBXNativeTarget "ArdRasp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAC86A481CDC8FB900BEDE92 /* Debug */,
+				DAC86A491CDC8FB900BEDE92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DAC86A2D1CDC8FB900BEDE92 /* Project object */;
+}
