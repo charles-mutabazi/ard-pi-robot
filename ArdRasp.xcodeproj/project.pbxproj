@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA6D3E0E1CE9D48800CABC9A /* CustomViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6D3E0D1CE9D48800CABC9A /* CustomViews.swift */; };
 		DAC86A391CDC8FB900BEDE92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC86A381CDC8FB900BEDE92 /* AppDelegate.swift */; };
 		DAC86A3B1CDC8FB900BEDE92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC86A3A1CDC8FB900BEDE92 /* ViewController.swift */; };
 		DAC86A3E1CDC8FB900BEDE92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAC86A3C1CDC8FB900BEDE92 /* Main.storyboard */; };
 		DAC86A401CDC8FB900BEDE92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAC86A3F1CDC8FB900BEDE92 /* Assets.xcassets */; };
 		DAC86A431CDC8FB900BEDE92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAC86A411CDC8FB900BEDE92 /* LaunchScreen.storyboard */; };
+		F8F84493E472D7560BE849C2 /* Pods_ArdRasp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E076DA3CF46F92CC954B2420 /* Pods_ArdRasp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A0C08876D3E0DC61DE4A9449 /* Pods-ArdRasp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArdRasp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArdRasp/Pods-ArdRasp.debug.xcconfig"; sourceTree = "<group>"; };
+		DA6D3E0D1CE9D48800CABC9A /* CustomViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViews.swift; sourceTree = "<group>"; };
 		DAC86A351CDC8FB900BEDE92 /* ArdRasp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArdRasp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAC86A381CDC8FB900BEDE92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAC86A3A1CDC8FB900BEDE92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,7 @@
 		DAC86A3F1CDC8FB900BEDE92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAC86A421CDC8FB900BEDE92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAC86A441CDC8FB900BEDE92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E076DA3CF46F92CC954B2420 /* Pods_ArdRasp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArdRasp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +34,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8F84493E472D7560BE849C2 /* Pods_ArdRasp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0527308171EEEC489CDDD0F1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A0C08876D3E0DC61DE4A9449 /* Pods-ArdRasp.debug.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3FD68D4FCD4E768644295A9D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E076DA3CF46F92CC954B2420 /* Pods_ArdRasp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DAC86A2C1CDC8FB900BEDE92 = {
 			isa = PBXGroup;
 			children = (
 				DAC86A371CDC8FB900BEDE92 /* ArdRasp */,
 				DAC86A361CDC8FB900BEDE92 /* Products */,
+				0527308171EEEC489CDDD0F1 /* Pods */,
+				3FD68D4FCD4E768644295A9D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +80,7 @@
 			children = (
 				DAC86A381CDC8FB900BEDE92 /* AppDelegate.swift */,
 				DAC86A3A1CDC8FB900BEDE92 /* ViewController.swift */,
+				DA6D3E0D1CE9D48800CABC9A /* CustomViews.swift */,
 				DAC86A3C1CDC8FB900BEDE92 /* Main.storyboard */,
 				DAC86A3F1CDC8FB900BEDE92 /* Assets.xcassets */,
 				DAC86A411CDC8FB900BEDE92 /* LaunchScreen.storyboard */,
@@ -71,9 +96,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DAC86A471CDC8FB900BEDE92 /* Build configuration list for PBXNativeTarget "ArdRasp" */;
 			buildPhases = (
+				14CD0008C3229010D5D1707B /* 📦 Check Pods Manifest.lock */,
 				DAC86A311CDC8FB900BEDE92 /* Sources */,
 				DAC86A321CDC8FB900BEDE92 /* Frameworks */,
 				DAC86A331CDC8FB900BEDE92 /* Resources */,
+				7296D17E76E57E4FEB6627E6 /* 📦 Embed Pods Frameworks */,
+				45B6CE56A64F80A933FBDCB4 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,11 +159,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		14CD0008C3229010D5D1707B /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		45B6CE56A64F80A933FBDCB4 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ArdRasp/Pods-ArdRasp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7296D17E76E57E4FEB6627E6 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ArdRasp/Pods-ArdRasp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DAC86A311CDC8FB900BEDE92 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA6D3E0E1CE9D48800CABC9A /* CustomViews.swift in Sources */,
 				DAC86A3B1CDC8FB900BEDE92 /* ViewController.swift in Sources */,
 				DAC86A391CDC8FB900BEDE92 /* AppDelegate.swift in Sources */,
 			);
@@ -200,7 +277,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -239,7 +316,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -248,8 +325,10 @@
 		};
 		DAC86A481CDC8FB900BEDE92 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0C08876D3E0DC61DE4A9449 /* Pods-ArdRasp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ArdRasp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.octans.dev.ArdRasp;
@@ -261,6 +340,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ArdRasp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.octans.dev.ArdRasp;
@@ -287,6 +367,7 @@
 				DAC86A491CDC8FB900BEDE92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

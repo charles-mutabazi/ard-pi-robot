@@ -1,25 +1,240 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xRY-VD-OvI">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Control Panel-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ArdRasp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conneting... 😔" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zuz-CR-B9n">
+                                <rect key="frame" x="20" y="337" width="627" height="18"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dashboard" translatesAutoresizingMaskIntoConstraints="NO" id="T8t-MN-XK9">
+                                <rect key="frame" x="283" y="89" width="100" height="100"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="ASo-Gh-5dh"/>
+                                    <constraint firstAttribute="height" constant="100" id="xrN-ld-M4R"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZc-1r-BeI" customClass="CustomButton" customModule="ArdRasp" customModuleProvider="target">
+                                <rect key="frame" x="20" y="177" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Roz-Xh-tQ9"/>
+                                    <constraint firstAttribute="width" constant="80" id="nYO-w7-lwG"/>
+                                </constraints>
+                                <color key="tintColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="left"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cme-qR-axq" customClass="CustomButton" customModule="ArdRasp" customModuleProvider="target">
+                                <rect key="frame" x="547" y="89" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="55" id="9WO-Ol-xGM"/>
+                                    <constraint firstAttribute="height" constant="80" id="LLA-Pf-8N8"/>
+                                    <constraint firstAttribute="width" constant="80" id="UD1-3t-77k"/>
+                                    <constraint firstAttribute="height" constant="45" id="sAZ-bO-ehR"/>
+                                    <constraint firstAttribute="height" constant="39" id="sa6-7e-mba"/>
+                                </constraints>
+                                <state key="normal" image="forward"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="9WO-Ol-xGM"/>
+                                        <exclude reference="sAZ-bO-ehR"/>
+                                        <exclude reference="sa6-7e-mba"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="62J-Db-DdP" customClass="CustomButton" customModule="ArdRasp" customModuleProvider="target">
+                                <rect key="frame" x="547" y="259" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="55" id="0Ju-D5-ly8"/>
+                                    <constraint firstAttribute="height" constant="80" id="0T3-VM-ooZ"/>
+                                    <constraint firstAttribute="width" constant="80" id="8ki-nY-tQw"/>
+                                    <constraint firstAttribute="height" constant="45" id="M3o-vs-SLK"/>
+                                    <constraint firstAttribute="height" constant="39" id="QeC-wd-DfM"/>
+                                </constraints>
+                                <color key="tintColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="backward"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="0Ju-D5-ly8"/>
+                                        <exclude reference="M3o-vs-SLK"/>
+                                        <exclude reference="QeC-wd-DfM"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Da-KF-4gQ" customClass="CustomButton" customModule="ArdRasp" customModuleProvider="target">
+                                <rect key="frame" x="145" y="177" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="5Xc-YG-2CG"/>
+                                    <constraint firstAttribute="height" constant="45" id="7ZH-4M-ONC"/>
+                                    <constraint firstAttribute="width" constant="80" id="DXR-1w-aka"/>
+                                    <constraint firstAttribute="height" constant="80" id="LhZ-e7-DzX"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="55" id="jNr-A0-ylW"/>
+                                </constraints>
+                                <color key="tintColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="right"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="5Xc-YG-2CG"/>
+                                        <exclude reference="7ZH-4M-ONC"/>
+                                        <exclude reference="jNr-A0-ylW"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5x-D1-Fkn" customClass="CustomButton" customModule="ArdRasp" customModuleProvider="target">
+                                <rect key="frame" x="275" y="275" width="116" height="48"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="116" id="9Qo-3k-B6p"/>
+                                    <constraint firstAttribute="height" constant="45" id="EUf-mG-kAv"/>
+                                    <constraint firstAttribute="height" constant="39" id="GUV-0u-BgI"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="55" id="gpW-XG-HvO"/>
+                                    <constraint firstAttribute="height" constant="48" id="oyD-bu-1I0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="tintColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Ignite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="gpW-XG-HvO"/>
+                                        <exclude reference="EUf-mG-kAv"/>
+                                        <exclude reference="GUV-0u-BgI"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="stopBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4vf-hD-aEz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stop" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bmV-Th-2jb">
+                                <rect key="frame" x="256" y="213" width="155" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="155" id="1BG-qa-Rb5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zuz-CR-B9n" secondAttribute="bottom" constant="20" id="0Q8-8Q-e8g"/>
+                            <constraint firstItem="TZc-1r-BeI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="2A6-7T-GnC"/>
+                            <constraint firstItem="T8t-MN-XK9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3pp-8P-Wii"/>
+                            <constraint firstItem="TZc-1r-BeI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="113" id="6lX-hY-qXg"/>
+                            <constraint firstItem="T8t-MN-XK9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="NrV-Il-dnL"/>
+                            <constraint firstItem="bmV-Th-2jb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QRS-59-UH9"/>
+                            <constraint firstItem="zuz-CR-B9n" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="RVS-4k-Ust"/>
+                            <constraint firstItem="H5x-D1-Fkn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xoj-SD-aAq"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="62J-Db-DdP" secondAttribute="bottom" constant="36" id="Z27-rU-uac"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="62J-Db-DdP" secondAttribute="trailing" constant="20" id="Z71-hB-Tlp"/>
+                            <constraint firstItem="bmV-Th-2jb" firstAttribute="top" secondItem="T8t-MN-XK9" secondAttribute="bottom" constant="24" id="aoN-fq-pdQ"/>
+                            <constraint firstItem="zuz-CR-B9n" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="cn4-4o-l3b"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cme-qR-axq" secondAttribute="trailing" constant="20" id="cpl-CC-31N"/>
+                            <constraint firstItem="zuz-CR-B9n" firstAttribute="top" secondItem="H5x-D1-Fkn" secondAttribute="bottom" constant="14" id="i49-5E-SWd"/>
+                            <constraint firstItem="8Da-KF-4gQ" firstAttribute="leading" secondItem="TZc-1r-BeI" secondAttribute="trailing" constant="45" id="iIq-fE-g6g"/>
+                            <constraint firstItem="8Da-KF-4gQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="113" id="iNX-18-ukO"/>
+                            <constraint firstItem="H5x-D1-Fkn" firstAttribute="top" secondItem="bmV-Th-2jb" secondAttribute="bottom" constant="41" id="kKT-80-g4N"/>
+                            <constraint firstItem="H5x-D1-Fkn" firstAttribute="top" secondItem="T8t-MN-XK9" secondAttribute="bottom" constant="86" id="mGc-Nn-bib"/>
+                            <constraint firstItem="cme-qR-axq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="s3Z-oP-SRd"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Control Panel" id="NhQ-z6-Y7p"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="backward" destination="62J-Db-DdP" id="PEY-bQ-vZ0"/>
+                        <outlet property="forward" destination="cme-qR-axq" id="zZX-7S-aeo"/>
+                        <outlet property="left" destination="TZc-1r-BeI" id="3Uj-MW-Fct"/>
+                        <outlet property="messageLabel" destination="bmV-Th-2jb" id="TGW-Zq-uVr"/>
+                        <outlet property="right" destination="8Da-KF-4gQ" id="VnA-Em-WC8"/>
+                        <outlet property="socStatus" destination="zuz-CR-B9n" id="jhd-bo-G92"/>
+                        <outlet property="stopBtn" destination="H5x-D1-Fkn" id="4HU-9X-KXF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1218.5" y="386.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tEs-hO-OUY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xRY-VD-OvI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9XC-Rx-66m">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="jba-St-c6a"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="08o-Ie-HDC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="478" y="387"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="backward" width="22" height="22"/>
+        <image name="dashboard" width="100" height="100"/>
+        <image name="forward" width="22" height="22"/>
+        <image name="left" width="26" height="24"/>
+        <image name="right" width="26" height="24"/>
+    </resources>
 </document>
