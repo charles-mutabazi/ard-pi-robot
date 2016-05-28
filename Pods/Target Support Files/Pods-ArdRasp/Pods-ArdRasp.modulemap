@@ -1,0 +1,6 @@
+framework module Pods_ArdRasp {
+  umbrella header "Pods-ArdRasp-umbrella.h"
+
+  export *
+  module * { export * }
+}
